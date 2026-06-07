@@ -6,46 +6,103 @@
 <title>contact us</title>
 </head>
 <style>
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 #wrapper{
-width: 80%;
-padding: 20px;
-margin: auto;
-border: 2px solid salmon;
-border-radius: 15px;
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    border: 2px solid salmon;
+    border-radius: 15px;
+}
+
+header{
+    background-color: aqua;
+    color: blue;
+    font-size: 80px;
+    padding: 15px;
+    text-align: center;
+}
+
+nav{
+    float: left;
+    width: 150px;
+    padding: 10px;
+    background-color: cadetblue;
+    color: white;
+    min-height: 300px;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+nav a:hover{
+    background-color: blanchedalmond;
+    padding: 10px;
 }
 
 main{
-margin-left: 170px;
-padding: 10px;
-background-color: rgb(160, 95, 131);
-color: white;
-min-height: 300px;
+    margin-left: 170px;
+    padding: 10px;
+    background-color: rgb(160, 95, 131);
+    color: white;
+    min-height: 300px;
 }
+
 main img{
-float: right;
-width: 200px;
-height: 200px;
-border: 2px solid steelblue;
-border-radius: 15px;
-}
-nav{
-float: left;
-width: 150px;
-padding: 10px;
-background-color: cadetblue;
-color: white;
-min-height: 300px;
-}
-nav a{
-text-decoration: none;
-display: block;
-margin-top: 10px;
-
-&:hover{
-background-color: blanchedalmond;
-padding: 10px;
+    float: right;
+    width: 200px;
+    height: 200px;
+    border: 2px solid steelblue;
+    border-radius: 15px;
+    max-width: 100%;
 }
 
+footer{
+    background-color: coral;
+    text-align: center;
+    padding: 25px;
+    clear: both;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px){
+
+    #wrapper{
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav{
+        float: none;
+        width: 100%;
+        min-height: auto;
+    }
+
+    main{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    main img{
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+
+    header{
+        font-size: 40px;
+    }
 }
 </style>
 <body>
